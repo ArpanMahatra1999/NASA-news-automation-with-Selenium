@@ -35,4 +35,8 @@ for i in range(3):
     driver.execute_script("arguments[0].click();", next_page)
     time.sleep(120)
 
+# create df to csv file
 df.to_csv("nasa.csv")
+
+# close driver
+driver.quit()
