@@ -12,7 +12,7 @@ import time
 options = Options()
 options.headless = True
 service = Service(executable_path="chromedriver.exe")
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome(service=service, options=options)
 driver.maximize_window()
 driver.get("https://www.nasa.gov/news/all-news/")
 
